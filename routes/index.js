@@ -10,4 +10,8 @@ router.get('/foo', (req, res, next) => {
   res.render('foo', { x: 'x' });
 });
 
+router.get('/section-test', (req, res, next) => {
+  res.render('section-test');
+});
+
 module.exports = router;

@@ -2,19 +2,19 @@
 
 <form action="/newsletter-signup/process" method="POST" class="form-horizontal" role='form'>
   <input type="hidden" name='_csrf' value="{{csrf}}" />
-  <div class="form-group">
-    <label for='fieldName' class='col-sm-2 control-label'>Name</label>
+  <div class="flex flex-row justify-center">
+    <label for='fieldName' class='text-gray-700'>Name</label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" id='fieldName' name='name'>
+      <input type="text" class="border border-yellow-400 shadow-md rounded-md" id='fieldName' name='name'>
     </div>
   </div>
-  <div class="form-group">
+  <div class="flex flex-row justify-center">
     <label for="fieldEmail" class="col-sm-2 control-label">Email</label>
     <div class="col-sm-4">
-      <input type="email" class="form-control" required id="fieldEmail" name="email">
+      <input type="email" class="border border-green-300 shadow-md rounded-md" required id="fieldEmail" name="email">
     </div>
   </div>
-  <div class="form-group">
+  <div class="flex flex-row justify-center">
     <div class="col-sm-offset-2 col-sm-4">
       <button type="submit" class="btn btn-primary">Register</button>
     </div>
